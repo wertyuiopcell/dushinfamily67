@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Семейная Библиотека - Семья Душиных</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:weight@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0e1a; /* Темный фон как на фото */
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            /* Если у вас есть фоновое изображение с частицами, добавьте его здесь */
+            background-image: radial-gradient(circle at center, #1a2a4a 0%, #05080f 100%);
+            min-height: 100vh;
+        }
+
+        /* Навигация */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #fff;
+            border-bottom: 1px solid white;
+        }
+
+        /* Заголовки */
+        .header-section {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 1px;
+        }
+
+        /* Сетка книг */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 колонки в ряд */
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .book-card {
+            text-align: left; /* Текст выровнен по левому краю под книгой */
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+        .book-cover {
+            width: 100%;
+            aspect-ratio: 1/1; /* На фото обложки квадратные */
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+        }
+
+        /* Стили текста под книгой */
+        .book-meta {
+            font-size: 11px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .book-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Семья Душиных</a>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="books.html" class="active">Книги</a>
+            <a href="tree.html">Дерево</a>
+            <a href="family.html">Моя семья</a>
+        </div>
+    </nav>
+
+    <div class="header-section">
+        <h1 class="main-title">Семейная Библиотека</h1>
+        <p class="subtitle">История пяти родов в четырёх книгах</p>
+    </div>
+
+    <div class="books-grid">
+        <a href="book1.html" class="book-card">
+            <img src="book1.jpg" class="book-cover" alt="Корни">
+            <span class="book-meta">Книга первая</span>
+            <span class="book-name">Корни</span>
+        </a>
+
+        <a href="book2.html" class="book-card">
+            <img src="book2.jpg" class="book-cover" alt="Чужаки">
+            <span class="book-meta">Книга вторая</span>
+            <span class="book-name">Чужаки</span>
+        </a>
+<a href="book3.html" class="book-card">
+            <img src="book3.jpg" class="book-cover" alt="Встреча">
+            <span class="book-meta">Книга третья</span>
+            <span class="book-name">Встреча</span>
+        </a>
+
+        <a href="book4.html" class="book-card">
+            <img src="book4.jpg" class="book-cover" alt="Мы">
+            <span class="book-meta">Книга четвёртая</span>
+            <span class="book-name">Мы</span>
+        </a>
+    </div>
+
+</body>
+</html>

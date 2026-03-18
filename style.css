@@ -1,0 +1,128 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Используем классический шрифт для истории */
+    background-color: #f5ede4; /* Приятный бежевый фон */
+    /* Здесь можно добавить фоновое изображение книги с прозрачностью */
+    background-image: linear-gradient(rgba(245, 237, 228, 0.8), rgba(245, 237, 228, 0.8)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #1a1a1a;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    color: #483d8b; /* Фиолетовый оттенок */
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    color: #483d8b;
+    border-bottom: 2px solid #483d8b;
+}
+
+/* Главный блок */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.main-title {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.highlight {
+    color: #483d8b;
+}
+
+/* Полупрозрачная плашка с текстом */
+.intro-box {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 800px;
+    margin: 40px 0;
+    line-height: 1.6;
+    font-size: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Фиолетовая кнопка */
+.btn-main {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #3f37a1;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(63, 55, 161, 0.4);
+    transition: 0.3s;
+    margin-bottom: 60px;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    background-color: #312a8a;
+}
+
+/* Три карточки внизу */
+.info-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fdf5ef;
+    border: 1px solid #e8ddd3;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
